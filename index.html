@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator App</title>
+    <link
+      rel="shortcut icon"
+      href="imgs/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js" defer></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'Arial', 'sans-serif'],
+            },
+            colors: {
+              primary_neon: '#52ffa8',
+              primary_light_cyan: '#cee3e9',
+              grayish_blue: '#313B47',
+              dark_grayish_blue: '#202632',
+              dark_blue: '#1f2632',
+              white: '#fff',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-dark_grayish_blue min-h-screen flex flex-col items-center justify-center px-2 md:px-0 font-sans"
+  >
+    <main>
+      <div
+        class="error p-4 rounded-lg bg-red-100 w-full mb-8 font-bold hidden transition-all"
+      >
+        Problem while fetching quote!
+      </div>
+      <div
+        class="bg-grayish_blue max-w-sm w-full rounded-xl p-6 h-max relative"
+      >
+        <h1
+          class="text-primary_neon text-xs font-semibold tracking-widest text-center mb-6 adviceNo"
+        >
+          ADVICE #
+        </h1>
+        <blockquote
+          class="quote text-center text-primary_light_cyan font-bold text-base md:text-lg mb-6"
+        >
+          Loading Quote...
+        </blockquote>
+        <img
+          src="./imgs//pattern-divider-desktop.svg"
+          alt="Divider"
+          class="hidden md:block w-full mb-6"
+        />
+        <img
+          src="./imgs//pattern-divider-mobile.svg"
+          alt="Divider"
+          class="block md:hidden w-full mb-6"
+        />
+        <div
+          class="dice bg-primary_neon w-12 h-12 flex items-center justify-center rounded-full absolute -bottom-auto right-1/2 translate-x-1/2 transition-all cursor-pointer hover:shadow-[0_-5px_8px_rgb(2,224,4)] hover:shadow-primary_neon"
+        >
+          <img src="./imgs/icon-dice.svg" alt="Dice image" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
