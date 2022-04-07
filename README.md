@@ -32,8 +32,8 @@ Users should be able to get a random quote when the page loads and also when the
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/nckmackenzie/advice-generator-app]
+- Live Site URL: [https://nckmackenzie.github.io/advice-generator-app/]
 
 ## My process
 
@@ -50,8 +50,6 @@ Users should be able to get a random quote when the page loads and also when the
 - Website - [nick Mackenzie](https://nicmackenzie.io)
 - Frontend Mentor - [@nckmackenzie](https://www.frontendmentor.io/profile/nckmackenzie)
 - Twitter - [@nckmackenzie](https://www.twitter.com/nckmackenzie)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
